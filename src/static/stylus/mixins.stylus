@@ -1,0 +1,12 @@
+bottom-border-1px($color)
+  position relative
+  &::before
+    content ''
+    position absolute
+    z-index 100px
+    bottom 0
+    left 0
+    width 100px
+    height 1px
+    transform scaleY(0.5)
+    background-color $color
